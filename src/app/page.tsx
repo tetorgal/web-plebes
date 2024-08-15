@@ -32,9 +32,9 @@ export default function Home() {
             Bienvenido a Rival Peluquería y Barbería
           </h1>
           <h3 className="mt-2 text-3xl font-semibold text-slate-200">
-            Los mejores cortes y estilos, solo para ti.
+          Donde el estilo encuentra la perfección. Cortes únicos, creados solo para ti.
           </h3>
-          <Button variant="solid" size="lg">Agenda tu corte ahora</Button>
+          <Button variant="solid" size="lg">Reserva tu experiencia hoy</Button>
         </div>
       </header>
       <section className="py-10">

@@ -1,10 +1,6 @@
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-
 export default function About() {
   return (
     <div>
-      <Navbar />
       <main>
         <h1>Acerca de Rival Peluquería y Barbería</h1>
         <section>
@@ -23,7 +19,6 @@ export default function About() {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 }

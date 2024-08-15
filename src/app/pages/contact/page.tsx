@@ -22,12 +22,14 @@ export default function Contact() {
 
   return (
     <section className=" w-full mx-auto py-24 bg-yellow-100 flex justify-center items-center">
-      <Card className="w-[46rem] py-8">
-        <div className="space-y-6 mb-6">
-          <h3 className="text-5xl font-extrabold mb-4 text-center">
-            Appointment Form
+      <Card className="w-[46rem] py-12">
+        <div className="space-y-6 mb-12 w-full">
+          <h3 className="text-4xl font-extrabold mb-4 text-center text-balance">
+            Reserva tu Cita
           </h3>
-          <p className="text-center text-3xl">Agenda tu cita ahora</p>
+          <p className="text-center text-xl">
+            Agenda tu cita con nuestros expertos y luce tu mejor estilo.
+          </p>
         </div>
         <div className="max-w-md mx-auto">
           <form onSubmit={handleAppointment} className="space-y-4 w-max">
@@ -70,8 +72,11 @@ export default function Contact() {
               />
             </div>
 
-            <Button type="submit" className="w-full bg-orange-500 font-normal text-md text-slate-100">
-              Enviar
+            <Button
+              type="submit"
+              className="w-full bg-orange-500 font-normal text-md text-white"
+            >
+              Confirmar
             </Button>
           </form>
         </div>
