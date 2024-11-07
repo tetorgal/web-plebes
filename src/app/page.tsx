@@ -11,34 +11,34 @@ export default function Home() {
   return (
     <div className="bg-white text-gray-800">
       <Head>
-        <title>Rival Peluquería y Barbería</title>
+        <title>Plebes Burguer</title>
         <meta
           name="description"
-          content="La mejor peluquería y barbería en tu ciudad."
+          content="La mejor hamburgueseria de tu ciudad"
         />
       </Head>
       <LandingNavbar />
       <header
       id="home"
-        className="text-center py-10 h-screen flex flex-col justify-center items-end px-12"
+        className="text-center py-10 h-screen flex flex-col justify-center items-start px-12"
         style={{
-          backgroundImage: "url(bg-photo.jpg)",
+          backgroundImage: "url(bg-photo.png)",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="flex flex-col justify-end items-end py-6 space-y-6 px-8">
+        <div className="flex flex-col justify-end items-start py-6 space-y-6 px-8">
           <h1 className="text-6xl font-extrabold text-slate-200">
-            Bienvenido a Rival Peluquería y Barbería
+            Bienvenido a Plebes Burguer
           </h1>
           <h3 className="mt-2 text-3xl font-semibold text-slate-200">
-          Donde el estilo encuentra la perfección. Cortes únicos, creados solo para ti.
+          Más que una hamburguesa
           </h3>
-          <Button variant="solid" size="lg">Reserva tu experiencia hoy</Button>
+          <Button variant="solid" color="danger" size="lg">Encuentranos aqui</Button>
         </div>
       </header>
       <section className="py-10">
-        <Services />
+        {/* <Services /> */}
         <Contact/>
         <Testimonials/>
         {/* Aquí irán las secciones como Servicios, Galería, Testimonios */}

@@ -11,58 +11,58 @@ import {
 
 const LandingNavbar = () => {
   return (
-    <Navbar maxWidth="full" isBlurred className="py-3">
+    <Navbar maxWidth="full" isBlurred className="py-3 bg-red-500">
       <NavbarBrand>
         <Link href="/">
         <Image
           src="logo.png"
-          alt="Rival Peluquería"
-          width={180}
-          height={160}
-          className="mt-4"
+          alt="Plebes Burger"
+          width={80}
+          height={80}
+          className="my-2"
         />
         </Link>
    
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="/#home">
+          <Link color="foreground" className="text-xl text-white font-bold" href="/#home">
             Inicio
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="/#services">
-            Servicios
+          <Link color="foreground" className="text-xl text-white font-bold"  href="/#services">
+            Menu
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="/#gallery">
+          <Link color="foreground" className="text-xl text-white font-bold"  href="/#gallery">
             Galería
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="/#testimonials">
-            Testimonios
+          <Link color="foreground" className="text-xl text-white font-bold"  href="/#testimonials">
+            Nuestros clientes
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="/#contact">
+          <Link color="foreground" className="text-xl text-white font-bold"  href="/#contact">
             Contacto
           </Link>
         </NavbarItem>
       </NavbarContent>
-      <NavbarContent justify="end">
+      {/* <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
-          <Button variant="ghost">
-            <Link href="#">Login</Link>
+          <Button variant="flat"  >
+            <Link href="#" color="foreground" className="text-xl text-white font-bold" >Login</Link>
           </Button>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
+          <Button as={Link} color="primary" href="#" variant="flat" className="text-xl text-white font-bold" >
             Sign Up
           </Button>
         </NavbarItem>
-      </NavbarContent>
+      </NavbarContent> */}
     </Navbar>
   );
 };

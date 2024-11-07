@@ -2,7 +2,7 @@ export default function About() {
   return (
     <div>
       <main>
-        <h1>Acerca de Rival Peluquería y Barbería</h1>
+        <h1>Acerca de Plebes Burger</h1>
         <section>
           <h2>Nuestra Historia</h2>
           <p>Con más de 10 años de experiencia...</p>

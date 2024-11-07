@@ -2,16 +2,14 @@ import { Card, CardBody } from "@nextui-org/react"; // Import NextUI Card
 import { FaQuoteLeft, FaQuoteRight, FaUser } from "react-icons/fa";
 
 const testimonials = [
-  { quote: "Excelente servicio!", author: "Juan Pérez" },
-  { quote: "El mejor corte que he tenido.", author: "María López" },
+  { quote: "Las hamburguesas son deliciosas y el servicio es inmejorable.", author: "Juan Pérez" },
+  { quote: "¡La mejor hamburguesa que he probado en mucho tiempo! Totalmente recomendable.", author: "María López" },
   {
-    quote:
-      "Un servicio excepcional, siempre atentos a cada detalle. ¡Mi estilo nunca ha lucido mejor!",
+    quote: "Un lugar increíble con un servicio amable y rápido. Siempre es un placer venir a Plebes Burger.",
     author: "Pedro Martínez",
   },
   {
-    quote:
-      "El ambiente en Rival es increíble, me siento como en casa cada vez que vengo. ¡El mejor lugar para un cambio de look!",
+    quote: "La atención al cliente es excelente, y las hamburguesas son simplemente perfectas.",
     author: "Roberto Fernandez",
   },
 ];
@@ -24,8 +22,7 @@ export default function Testimonials() {
           Lo que dicen nuestros clientes
         </h2>
         <p className="text-3xl text-center">
-          Conoce las experiencias de quienes nos eligen para lucir su mejor
-          estilo.
+          Conoce las experiencias de quienes nos eligen para disfrutar las mejores hamburguesas.
         </p>
       </div>
 
