@@ -1,13 +1,32 @@
+"use client"
 import Head from "next/head";
 import Footer from "@/components/ui/Footer";
-import Services from "@/components/Services";
 import LandingNavbar from "@/components/ui/Navbar";
-import { Button, Image } from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
 import Testimonials from "@/components/Testimonials";
 import Contact from "./pages/contact/page";
+import { useEffect } from 'react'
 
 
 export default function Home() {
+
+
+  useEffect(() => {
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker
+          .register('/service-worker.js')
+          .then(registration => {
+            console.log('Service Worker registered:', registration);
+          })
+          .catch(error => {
+            console.log('Service Worker registration failed:', error);
+          });
+      });
+    }
+  }, []);
+
+
   return (
     <div className="bg-white text-gray-800">
       <Head>
@@ -19,7 +38,7 @@ export default function Home() {
       </Head>
       <LandingNavbar />
       <header
-      id="home"
+        id="home"
         className="text-center py-10 h-screen flex flex-col justify-center items-start px-12"
         style={{
           backgroundImage: "url(bg-photo.png)",
@@ -32,15 +51,15 @@ export default function Home() {
             Bienvenido a Plebes Burguer
           </h1>
           <h3 className="mt-2 text-3xl font-semibold text-slate-200">
-          Más que una hamburguesa
+            Más que una hamburguesa
           </h3>
           <Button variant="solid" color="danger" size="lg">Encuentranos aqui</Button>
         </div>
       </header>
       <section className="py-10">
         {/* <Services /> */}
-        <Contact/>
-        <Testimonials/>
+        <Contact />
+        <Testimonials />
         {/* Aquí irán las secciones como Servicios, Galería, Testimonios */}
       </section>
       <Footer />
