@@ -31,11 +31,6 @@ const LandingNavbar = () => {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" className="text-xl text-white font-bold"  href="/#services">
-            Menu
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
           <Link color="foreground" className="text-xl text-white font-bold"  href="/#gallery">
             Galería
           </Link>

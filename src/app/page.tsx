@@ -6,6 +6,8 @@ import { Button } from "@nextui-org/react";
 import Testimonials from "@/components/Testimonials";
 import Contact from "./pages/contact/page";
 import { useEffect } from 'react'
+import  FacebookGallery from "@/components/FacebookGallery";
+
 
 
 export default function Home() {
@@ -58,9 +60,9 @@ export default function Home() {
       </header>
       <section className="py-10">
         {/* <Services /> */}
-        <Contact />
-        <Testimonials />
-        {/* Aquí irán las secciones como Servicios, Galería, Testimonios */}
+        <section id="contact"> <Contact/> </section> 
+        <section id="testimonials"><Testimonials /></section>
+       <section id="gallery"><FacebookGallery/> </section> 
       </section>
       <Footer />
     </div>

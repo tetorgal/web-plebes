@@ -3,7 +3,10 @@ const ASSETS_TO_CACHE = [
   '/',             // Main page
   '/logo.png',     // Logo image
   '/bg-photo.png', // Background photo image
-  '/favicon.ico' // favicon for the tab icon
+  '/favicon.ico', // favicon for the tab icon
+  "/service-1.jpg",
+  "/service-2.jpg",
+  "/service-3.jpg"
 ];
 
 // Install event - caching specified assets
